@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .home-container {
+        width: 100%;
+        display: flex;
+        overflow: auto;
+        min-height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: var(--dl-color-gray-black);
+      }
+      .home-container1 {
+        flex: 0 0 auto;
+        width: auto;
+        height: auto;
+        display: flex;
+        margin-top: 25px;
+        align-items: flex-start;
+        margin-bottom: 25px;
+        justify-content: center;
+      }
+      .home-text {
+        color: #ffffff;
+        font-size: 30px;
+        font-style: verdana;
+        text-align: center;
+        font-weight: 800;
+        margin-left: 25px;
+        margin-right: 25px;
+      }
+      .home-button {
+        font-size: 40px;
+        margin-left: 25px;
+        margin-right: 25px;
+        border-radius: 10px;
+        background-color: #FFDE59;
+      }
+      .home-text05 {
+        color: var(--dl-color-gray-white);
+        font-size: 50px;
+        margin-top: 25px;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      .home-video {
+        width: 320px;
+        height: 180px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+      .home-text18 {
+        color: rgb(255, 255, 255);
+        margin-top: 25px;
+        text-align: center;
+        
+      }
+      .home-text19 {
+        font-size: 25px;
+      }
+      .home-text20 {
+        font-size: 25px;
+      }
+      .home-text22 {
+        font-size: 25px;
+      }
+      .home-text23 {
+        font-size: 25px;
+      }
+      .home-text24 {
+        font-size: 25px;
+      }
+      .home-text25 {
+        font-size: 25px;
+      }
+      .home-text28 {
+        font-size: 40px;
+      }
+      .home-text30 {
+        font-size: 40px;
+      }
+      .home-text32 {
+        font-size: 40px;
+      }
+      .home-text34 {
+        font-size: 40px;
+      }
+      .home-text36 {
+        font-size: 40px;
+      }
+      .home-text38 {
+        font-size: 40px;
+      }
+      .home-text40 {
+        font-size: 40px;
+      }
+      .home-text42 {
+        font-size: 40px;
+      }
+      .home-text44 {
+        font-size: 40px;
+      }
+      .home-text46 {
+        font-size: 40px;
+      }
+      .home-text48 {
+        font-size: 40px;
+      }
+      .home-text49 {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        margin-top: 25px;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      .home-text50 {
+        text-decoration: line-through;
+      }
+      .home-text52 {
+        text-decoration: line-through;
+      }
+      .home-button1 {
+        margin-top: 25px;
+        text-align: center;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        background-color: #FFDE59;
+      }
+      .home-text67 {
+        font-size: 25px;
+      }
+      .home-text69 {
+        font-size: 10px;
+      }
+      .home-text71 {
+        color: rgb(255, 255, 255);
+        font-style: verdana;
+        margin-top: 25px;
+        text-align: center;
+        font-weight: 700;
+      }
+      .home-text72 {
+        font-size: 50px;
+      }
+      .home-text73 {
+        font-size: 50px;
+      }
+      .home-text76 {
+        font-size: 30px;
+      }
+      .home-text78 {
+        font-size: 30px;
+      }
+      .home-text80 {
+        font-size: 30px;
+      }
+      .home-text82 {
+        font-size: 30px;
+      }
+      .home-text84 {
+        font-size: 30px;
+      }
+      .home-text86 {
+        font-size: 30px;
+      }
+      .home-text88 {
+        font-size: 30px;
+      }
+      .home-text90 {
+        font-size: 30px;
+      }
+      @media(max-width: 479px) {
+        .home-container {
+          padding-top: 20px;
+          background-color: #000000;
+        }
+        .home-container1 {
+          margin-bottom: 25px;
+        }
+        .home-text {
+          color: rgb(0, 0, 0);
+          font-size: 15px;
+          font-style: verdana;
+          text-align: center;
+          font-weight: 800;
+          margin-right: 10px;
+        }
+        .home-text01 {
+          color: #ffffff;
+          font-size: 15px;
+        }
+        .home-text02 {
+          color: #ffffff;
+          font-size: 15px;
+        }
+        .home-text03 {
+          color: #ffffff;
+          font-size: 15px;
+        }
+        .home-button {
+          width: 215px;
+          height: 47px;
+          font-size: 17px;
+          box-shadow: rgb(212, 212, 212) 0px 0px 5px 1px;
+          font-style: verdana;
+          text-align: center;
+          font-weight: 800;
+          line-height: 2;
+          font-size: 10px;
+          margin-left: 10px;
+          margin-right: px;
+          border-radius: 10px;
+          text-transform: uppercase;
+          background-color: rgb(235, 213, 18);
+        }
+        .home-text05 {
+          color: rgb(255, 255, 255);
+          font-size: 25px;
+          align-self: center;
+          margin-top: 25px;
+          text-align: center;
+          border-color: var(--dl-color-gray-black);
+          border-style: hidden;
+          border-width: 0px;
+          margin-bottom: 25px;
+        }
+        .home-text07 {
+          color: #64e688;
+        }
+        .home-text11 {
+          color: #64e688;
+        }
+        .home-text14 {
+          color: #64e688;
+        }
+        .home-text16 {
+          color: #64e688;
+        }
+        .iframvideo {
+          margin-top: 25px;
+          margin-bottom: 25px;
+        }
+        .home-text18 {
+          color: rgb(255, 255, 255);
+          margin-top: 25px;
+          text-align: center;
+          margin-bottom: 25px;
+        }
+        .home-text19 {
+          font-size: 22px;
+        }
+        .home-text20 {
+          color: #64e688;
+          font-size: 22px;
+        }
+        .home-text21 {
+          font-size: 22px;
+        }
+        .home-text22 {
+          font-size: 22px;
+        }
+        .home-text23 {
+          color: #64e688;
+          font-size: 22px;
+        }
+        .home-text24 {
+          font-size: 22px;
+        }
+        .home-text25 {
+          color: #64e688;
+          font-size: 22px;
+        }
+        .home-text26 {
+          font-size: 22px;
+        }
+        .home-text27 {
+          font-size: 15px;
+        }
+        .home-text28 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text29 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text30 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text31 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text32 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text33 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text34 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text35 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text36 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text37 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text38 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text39 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text40 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text41 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text42 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text43 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text44 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text45 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text46 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text47 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text48 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text49 {
+          color: rgb(255, 255, 255);
+          font-size: 50px;
+          margin-top: 25px;
+          text-align: center;
+          margin-bottom: 25px;
+        }
+        .home-text50 {
+          color: #ffffff;
+          font-size: 25px;
+          text-decoration: line-through;
+        }
+        .home-text51 {
+          color: #ffffff;
+          font-size: 25px;
+          text-decoration: line-through;
+        }
+        .home-text52 {
+          color: #ffffff;
+          font-size: 25px;
+          text-decoration: line-through;
+        }
+        .home-text53 {
+          color: #ffffff;
+          font-size: 50px;
+          text-decoration: line-through;
+        }
+        .home-text54 {
+          color: #ffffff;
+          font-size: 10px;
+        }
+        .home-text55 {
+          color: #64e688;
+          font-size: 25px;
+        }
+        .home-text56 {
+          color: #ffffff;
+          font-size: 25px;
+        }
+        .home-text57 {
+          color: #64e688;
+          font-size: 25px;
+        }
+        .home-text58 {
+          color: #64e688;
+          font-size: 25px;
+        }
+        .home-text59 {
+          color: #64e688;
+          font-size: 25px;
+        }
+        .home-text60 {
+          color: #64e688;
+          font-size: 50px;
+        }
+        .home-text61 {
+          color: #ffffff;
+          font-size: 10px;
+        }
+        .home-text62 {
+          color: #64e688;
+          font-size: 25px;
+        }
+        .home-text63 {
+          color: #ffffff;
+          font-size: 25px;
+        }
+        .home-text64 {
+          color: #64e688;
+          font-size: 25px;
+        }
+        .home-text65 {
+          color: inherit;
+          font-size: 50px;
+        }
+        .home-button1 {
+          padding: px;
+          font-style: verdana;
+          margin-top: 25px;
+          text-align: center;
+          font-weight: 800;
+          border-radius: 10px;
+          margin-bottom: 25px;
+          background-color: rgb(235, 213, 18);
+        }
+        .home-text67 {
+          font-size: 25px;
+          font-style: verdana;
+          font-weight: 800;
+        }
+        .home-text68 {
+          font-size: 25px;
+        }
+        .home-text69 {
+          font-size: 10px;
+        }
+        .home-text71 {
+          color: rgb(255, 255, 255);
+          font-style: verdana;
+          margin-top: 25px;
+          text-align: center;
+          font-weight: 700;
+          
+        }
+        .home-text72 {
+          color: #64e688;
+          font-size: 22px;
+          font-style: inherit;
+          font-weight: 700;
+        }
+        .home-text73 {
+          font-size: 22px;
+          font-style: inherit;
+          font-weight: 700;
+        }
+        .home-text74 {
+          font-size: 22px;
+          font-style: inherit;
+          font-weight: 700;
+        }
+        .home-text75 {
+          font-size: 20px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text76 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text77 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text78 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text79 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text80 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text81 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text82 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text83 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text84 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text85 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text86 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text87 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text88 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text89 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .home-text90 {
+          font-size: 17px;
+          font-style: verdana;
+          font-weight: 600;
+        }
+        .list{
+            font-size: 17px;
+            color: #ffffff;
+            align-content: center;
+            font-weight: 700px;
+        }
+      }
+      
+    </style>
+<body>
+    <div>
+        <link href="./home.css" rel="stylesheet" />
+        <div class="home-container">
+          <div class="home-container1">
+            <span class="home-text">
+              <span class="home-text01">Get Started Today</span>
+              <br class="home-text02" />
+              <span class="home-text03">@ Just INR 99/- ($1.5)</span>
+              <br />
+            </span>
+            <button class="home-button button">CLICK TO ENROLL</button>
+          </div>
+          <h1 class="home-text05">
+            <span>FREE VIDEO</span>
+            <span class="home-text07">EXPOSES</span>
+            <span>:</span>
+            <br />
+            <span>THE</span>
+            <span class="home-text11">SECRET</span>
+            <span>WAY TO</span>
+            <br />
+            <span class="home-text14">HACK</span>
+            <span>PC &amp;</span>
+            <span class="home-text16">ANDROID</span>
+            <span>DEVICES</span>
+          </h1>
+          <div class="iframevideo" style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/798928778?h=64a992f566&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="GITPL Video.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+          <h1 class="home-text18">
+            <span class="home-text19">Things you can</span>
+            <span class="home-text20">Access</span><br />
+            <span class="home-text22">after</span>
+            <span class="home-text23">Hacking</span>
+            <span class="home-text24">an</span>
+            <span class="home-text25">Android</span></h1>
+            <ul class="list">
+                <li>
+                    Social Media Accounts Passwords
+                </li>
+                <li>
+                    File Manager
+                </li>
+                <li>
+                    Live Camera
+                </li>
+                <li>
+                    Live Audio Recording
+                </li>
+                <li>
+                    Gallery
+                </li>
+                <li>
+                    SMS
+                </li>
+                <li>
+                    Call Recordings
+                </li>
+                <li>
+                    Contacts
+                </li>
+                <li>
+                    Live Location
+                </li>
+                <li>
+                    Complete Control Over Mobile
+                </li>
+                <li>
+                    and Much More..
+                </li>
+                
+            </ul>
+          <h1 class="home-text49">
+            <span class="home-text50">Generally Rs 999/-</span>
+            <span class="home-text52">($12.1)</span><br />
+            <span class="home-text55">Today&apos;s</span>
+            <span class="home-text56">Price</span>
+            <span class="home-text57">(90%</span>
+            <span class="home-text59">Discount)</span><br />
+            <span class="home-text62">Only</span>
+            <span class="home-text63">at</span>
+            <span class="home-text64">Rs 99.9/- ($1.5)</span>
+            <br class="home-text65" />
+          </h1>
+          <button class="home-button1 button">
+            <span>
+              <span class="home-text67">GET STARTED TODAY</span>
+              <br class="home-text68" />
+              <span class="home-text69">Rated 4.7 (Out of 5) By 5000 Students</span>
+              <br />
+            </span>
+          </button><h1 class="home-text18">
+          <span class="home-text71">
+            <span class="home-text72">Key Highlights</span>
+            <span class="home-text73">of Program:</span></span></h1>
+            <ul class="list">
+                <li>
+                    Discussed Two Different Ways of Hacking
+                </li>
+                <li>
+                    Beginner Friendly   
+                </li>
+                <li>
+                    No Programming or Hacking Knowledge Required
+                </li>
+                <li>
+                    Proven Ways 
+                </li>
+                <li>
+                    Extremely Affordable
+                </li>
+                <li>
+                    Practical Learning
+                </li>
+                <li>
+                    Free Required Tools
+                </li>
+                <li>
+                    Life Time Access
+                </li>
+            </ul>
+        </div>
+      </div>
+</body>
+</html>
